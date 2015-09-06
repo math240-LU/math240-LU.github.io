@@ -2,6 +2,7 @@ markdown: kramdown
 exclude:
   - LICENSE
 
+title:   Math 240
 layouts: ./_noita
 baseurl: https://math240-LU.github.io
 
