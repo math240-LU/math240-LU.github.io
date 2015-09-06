@@ -24,13 +24,8 @@ noita:
         url: /syllabus/
       - name: Resources
         url: /resources/
-      - name: Sakai
-        url: https://sakai.duke.edu/portal/site/ef372254-413e-42f6-b414-f8bc91a58fa0
-        absolute: true
-      - name: RStudio
-        url: https://vm-manage.oit.duke.edu/containers
+      - name: Moodle
+        url: https://moodle.lawrence.edu/
         absolute: true
       - name: Links
         url: /links/
-      - name: FAQ
-        url: /faq/
