@@ -23,10 +23,8 @@ noita:
         url: /info/
       - name: Syllabus
         url: /syllabus/
-      - name: Resources
-        url: /resources/
+      - name: Links
+        url: /links/      
       - name: Moodle
         url: https://moodle.lawrence.edu/
         absolute: true
-      - name: Links
-        url: /links/

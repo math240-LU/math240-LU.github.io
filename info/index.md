@@ -3,16 +3,16 @@ layout: page
 title: Course Information
 ---
 
-### Teaching team:
+### Professor:
 
-Professor: [Adam Loy](http://aloy.github.io) - [adam.m.loy@lawrence.edu](mailto:adam.m.loy@lawrence.edu)
+[Adam Loy](http://aloy.github.io) - [adam.m.loy@lawrence.edu](mailto:adam.m.loy@lawrence.edu)
 
 * * *
 
 ### Required Textbook:
 
 [Introduction to Probability](https://www.crcpress.com/Introduction-to-Probability/Blitzstein-Hwang/9781466575578) - Blitzstein and Hwang \\
-   Chapman and Hall/CRC , 2014 (ISBN: 9781466575578) \\
+   Chapman and Hall/CRC, 2014 (ISBN: 9781466575578)
 
 * * *
 
@@ -24,10 +24,15 @@ Monday, Wednesday, Friday 9:50--11:00 am
 
 ### <a name="exams"></a>Exams:
 
-* Midterm: Friday, May 29, 11am - 12:30pm (in class)
-* Final: June 24, 11am - 2pm
+* Midterm I: Friday, October 2, 9:50--11:00 am (in class)
+* Midterm II: Wednesday, October 28, 9:50--11:00 am (in class)
+* Final: Sunday, November 22, 11:30 am--2:00 pm
 
 * * *
+
+### <a name="problems"></a>Problem Sets:
+
+A few problems will be assigned each Monday and Friday. The problems assigned on Monday are due Friday by 2:00 p.m., while those assigned Friday are due Tuesday by 4:00 p.m. Problems are due in my office (Briggs 420), and <b>no late work will be accepted.
 
 ### <a name="oh"></a>Office Hours: 
 
