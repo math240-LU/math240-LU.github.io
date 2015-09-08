@@ -191,9 +191,9 @@
 
 <p><a name="r2">If I have counts for categorical data in a table form how do I recreate the data in R?</a></p>
 
-<p>You can make use of the <code>rep()</code> (repeat) function in R to do this.</p>
+<p>You can make use of the <code>rep()</code> (repeat) function in R to do this. </p>
 
-<p>Here is a small example. Let’s say I have the following contingency table:</p>
+<p>Here is a small example. Let’s say I have the following contingency table: </p>
 
 <table>
   <thead>
@@ -226,13 +226,13 @@
   </tbody>
 </table>
 
-<p>In order to recreate a data set where each row represents one respondent, use the following code:</p>
+<p>In order to recreate a data set where each row represents one respondent, use the following code: </p>
 
 <pre><code>mature = c(rep("mature mom", 132), rep("younger mom", 867))
 married = c(rep("married", 25), rep("not married", 107), rep("married", 361), rep("not married", 506))
 </code></pre>
 
-<p>You can make a table using the following code to double check that the data looks like the original contingency table.</p>
+<p>You can make a table using the following code to double check that the data looks like the original contingency table. </p>
 
 <pre><code>table(mature, married)
 </code></pre>
@@ -242,12 +242,12 @@ married = c(rep("married", 25), rep("not married", 107), rep("married", 361), re
 <pre><code>momdata = as.data.frame(cbind(mature,married))
 </code></pre>
 
-<p>Once you have your data you can write it out to a .csv file using the following.</p>
+<p>Once you have your data you can write it out to a .csv file using the following. </p>
 
 <pre><code>write.csv(momdata, file = "moms.csv", quote = FALSE, row.names = FALSE)
 </code></pre>
 
-<p>You should now see a file called <em>mom.csv</em> in the Files window. You can select that file and export it (check the box next to the file, click on More, and then Export…) so that you can have a copy of this file on your computer, and can submit it with your project. For more information on the <code>write.csv()</code> function, use the following.</p>
+<p>You should now see a file called <em>mom.csv</em> in the Files window. You can select that file and export it (check the box next to the file, click on More, and then Export…) so that you can have a copy of this file on your computer, and can submit it with your project. For more information on the <code>write.csv()</code> function, use the following. </p>
 
 <pre><code>?write.csv
 </code></pre>
@@ -256,11 +256,11 @@ married = c(rep("married", 25), rep("not married", 107), rep("married", 361), re
 
 <p><a name="r3">3. My dataset is in a CSV or RData file on my computer. How can I get it into RStudio?</a></p>
 
-<p>Under the Files tab in the bottom right corner of RStudio you should see a button called Upload (with a yellow up arrow). Click on that, and then click on Choose File and find your data file and hit OK. You should then see this file listed in the Files window.</p>
+<p>Under the Files tab in the bottom right corner of RStudio you should see a button called Upload (with a yellow up arrow). Click on that, and then click on Choose File and find your data file and hit OK. You should then see this file listed in the Files window. </p>
 
 <p>This means that you have successfully uploaded your file to RStudio, but it’s not yet in your Workspace. Loading the dataset to your website requires slightly different methods depending on if it’s a CSV or RData file.</p>
 
-<p><strong>CSV file:</strong> Click on Import Dataset (under the Workspace tab on the top right corner of RStudio), then click on From Text File…</p>
+<p><strong>CSV file:</strong> Click on Import Dataset (under the Workspace tab on the top right corner of RStudio), then click on From Text File… </p>
 
 <p><img src="from_text_file.png" alt="from_text_file" /></p>
 
@@ -268,7 +268,7 @@ married = c(rep("married", 25), rep("not married", 107), rep("married", 361), re
 
 <p><img src="header_yes.png" alt="header_yes" /></p>
 
-<p>In order to use this dataset as a part of your write up, you need to include a piece of code in your .Rmd file to read the data in. Suppose your data file’s name is “d_prj1.csv”, and you want to call your dataset “d” then use the following:</p>
+<p>In order to use this dataset as a part of your write up, you need to include a piece of code in your .Rmd file to read the data in. Suppose your data file’s name is “d_prj1.csv”, and you want to call your dataset “d” then use the following: </p>
 
 <pre><code>```{r}
 d = read.csv("d_prj1.csv")
@@ -279,7 +279,7 @@ d = read.csv("d_prj1.csv")
 
 <p><strong>RData file:</strong> Since an RData file is already formatted for R, it takes fewer steps to load this type of data. In fact, it’s only two steps. Just click on the file in your Files pane. This will prompt a pop-up window asking whether you want to load the R data file into the global environment. Click Yes, and your data should be ready for use.</p>
 
-<p>In order to use this dataset as a part of your write up, you need to include a piece of code in your .Rmd file to read the data in. Suppose your data file’s name is “d_prj1.Rdata”, use the following:</p>
+<p>In order to use this dataset as a part of your write up, you need to include a piece of code in your .Rmd file to read the data in. Suppose your data file’s name is “d_prj1.Rdata”, use the following: </p>
 
 <pre><code>```{r}
 load("d_prj1.Rdata")
@@ -298,7 +298,7 @@ load("d_prj1.Rdata")
 
 <p><a name="r5">5. How can I export my files (like HTML or Rmd files) from RStudio so that I can submit it on Sakai?</a></p>
 
-<p>Locate the file you want to export in the Files pane (lower right corner), check the box next it, then click on More -&gt; Export, and then click on Download in the pop-up window.</p>
+<p>Locate the file you want to export in the Files pane (lower right corner), check the box next it, then click on More -&gt; Export, and then click on Download in the pop-up window. </p>
 
 <p><img src="export.png" alt="export" /></p>
 
@@ -306,7 +306,7 @@ load("d_prj1.Rdata")
 
 <p><a name="r6">6. How can I take a random sample of cases from my dataset?</a></p>
 
-<p>Let’s assume you want a random sample of 1000 observations, and you want to sample without replacement.</p>
+<p>Let’s assume you want a random sample of 1000 observations, and you want to sample without replacement. </p>
 
 <p>This is a two step process:</p>
 
@@ -470,7 +470,7 @@ plot(d$var)
 
 <hr />
 
-<p><a name="g3">3. I forgot my clicker today, can I write my responses on a piece of paper and get credit?</a></p>
+<p><a name="g3">3. I forgot my clicker today, can I write my responses on a piece of paper and get credit? </a></p>
 
 <p>No, you need to have your clicker to be able to get credit for the day. Note that up to two unexcused late arrivals or absences will not affect your clicker grade.</p>
 
