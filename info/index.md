@@ -19,7 +19,8 @@ title: Course Information
 
 ### Class meetings: 
 
-Monday, Wednesday, Friday 9:50--11:00 am
+Monday, Wednesday, Friday 9:50--11:00 am\\
+422 Briggs Hall
 
 * * *
 
