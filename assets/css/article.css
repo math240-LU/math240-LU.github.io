@@ -41,3 +41,5 @@ blockquote {
   padding-bottom: 20px;
   padding: 2px 20px;
 }
+
+strong { font-weight: bold; }
