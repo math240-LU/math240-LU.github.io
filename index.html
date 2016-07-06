@@ -1,396 +1,335 @@
-<!doctype html>
-<html dir="ltr" lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Math 240</title>
 
-  <link rel="stylesheet" href="/noita/foundation/css/normalize.css">
-  <link rel="stylesheet" href="/noita/foundation/css/foundation.min.css">
-  
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="description" content ="MATH 107: Elemenatary Statistics" />
+    <meta name="keywords" content ="Statistics, Lawrence" />
+    <meta name="author" content ="Adam Loy" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width">
 
-  <script src="/noita/foundation/js/vendor/modernizr.js"></script>
-</head>
-<body>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="icon" href="./assets/images/favicon.ico">
+    
 
-  <div class="top-bar" data-topbar id="topbar">
-    <ul class="title-area">
-      <li class="name">
-        <h1><a href="">Math 240 - Probability (Fall 2015)</a></h1>
-      </li>
-      <li class="toggle-topbar menu-icon">
-        <a href="#topbar"><span>Menu</span></a>
-      </li>
-    </ul>
-    <div class="top-bar-section">
-      
-      <ul class="right">
-      
-        <li>
-          
-            <a href="/" class="">Schedule</a>
-          
-        </li>
-      
-        <li>
-          
-            <a href="/info/" class="">Info</a>
-          
-        </li>
-      
-        <li>
-          
-            <a href="/post/m240-syllabus-f15.pdf" class="">Syllabus</a>
-          
-        </li>
-      
-        <li>
-          
-            <a href="/links/" class="">Links</a>
-          
-        </li>
-      
-        <li>
-          
-            <a href="https://moodle.lawrence.edu/" class="">Moodle</a>
-          
-        </li>
-      
+    <title> MATH 107 Fall 2016</title>
+
+  </head>
+
+  <body id="index" class="home">
+    <div class="head">
+      <h2>
+        <a href="http://data8.org/">
+          <span class="coursename">MATH 107 </span>
+        </a>
+      </h2>
+      <p> Elementary Statistics <br> Fall 2016</p>
+      <p>
+        <div class="instructors">
+          <span class="category">Instructor:</span> <br> Prof. Adam Loy
+        </div>
+<!--         <div class="instructors">
+          <span class="category">Co-Instructors:</span><br>
+          John DeNero<br>Michael I. Jordan<br>Tapan Parikh<br>David Wagner
+        </div>
+ -->      </p>
+      <hr/>
+      <ul class="navigation">
+        <a href="./"><li>Calendar</li></a>
+<a href="./resources.html"><li>Resources</li></a>
+
       </ul>
-      
+      <hr/>
+      <ul class="navigation">
+        <a href="./about.html"><li>Course Info</li></a>
+<a href="./staff.html"><li>Staff</li></a>
+<a href="./datascience/"><li><code>datascience</code> Reference</li></a>
+
+        <a href="https://piazza.com/berkeley/fall2015/ds10"><li>Piazza</li></a>
+<a href="https://bcourses.berkeley.edu/courses/1377166"><li>bCourses</li></a>
+
+      </ul>
+      <hr/>
     </div>
-  </div>
 
-  <br/>
-
-  <div class="row">
-    <div class="column">
-      <h2>Schedule</h2>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="column">
-      <hr>
-    </div>
-  </div>
-
-  <div class="row">
-  <div class="medium-8 columns">
-    <table style="font-size:90%" width="1000px">
-<thead>
+    <div id="content">
+      <h2>Calendar</h2>
+<table id="calendar">
 <tr>
-    <th width="20%" align="left">Date</th>
-    <th width="40%" align="left">Topic</th>
-    <th width="25%" align="left">Reading</th>
-    <th width="15%" align="left">Problem Sets</th>
+<th>Week</th>
+<th>Date</th>
+<th>Lecture</th>
+<th>Lab/Assignment</th>
+<th>Reading/Viewing</th>
 </tr>
-</thead> 
-
-<tbody>
-
-<tr>
-    <td><b>First Principles:</b></td>
-    <td></td>
-    <td></td>
-    <td></td>
+<tr class="odd">
+<td rowspan="2" class="weeknum">1</td>
+<td>Wed 8/26</td>
+<td>Why Data Science?
+<br/>
+(<a href="http://www.youtube.com/watch?v=69hHbVza7XI">Video</a>, Slides)</td>
+<td><span class="lab">Lab 1: Python and Jupyter</span></td>
+<td><a href="text/1_data.html#why-data-science">Chapter 1: Why Data Science</a></td>
 </tr>
-
-<tr>
-    <td>Mon, Sept 14</td>
-    <td>What is probability? + Basic set theory</td>
-    <td>A.1 + 1.1 + 1.2 </td>
-    <td></td>
+<tr class="odd">
+<td>Fri 8/28</td>
+<td>Causality and Experiments
+<br/>
+(<a href="http://www.youtube.com/watch?v=E8M4GoRCM28">Video</a>, <a href="text/slides/lec2.pdf">Slides</a>)</td>
+<td><a href="text/hw/hw01.pdf"><span class="hw">Homework 1</span></a> <span class="due">(due Wed 9/2)</span> (<a href="text/hw/hw01-answer.pdf">Solutions</a>)</td>
+<td><a href="text/1_data.html#causality-and-experiments">Chapter 1: Causality And Experiments</a></td>
 </tr>
-
-<tr>
-    <td>Wed, Sept 16</td>
-    <td>Basic set theory + Naive definition of probability + Multiplication rule</td>
-    <td>1.2 + 1.3  + 1.4</td>
-    <td></td>
+<tr class="even">
+<td rowspan="3" class="weeknum">2</td>
+<td>Mon 8/31</td>
+<td>Expressions
+<br/>
+(<a href="http://www.youtube.com/watch?v=hs5zZvBPgCc">Video</a>, <a href="text/slides/lec3.pdf">Slides</a>)</td>
+<td></td>
+<td><a href="text/1_data.html#expressions">Chapter 1: Expressions</a></td>
 </tr>
-
-<tr>
-    <td>Fri, Sept 18</td>
-    <td>More counting + Sampling methods</td>
-    <td>1.4</td>
-    <td><a href="post/ps/ps1-m240-f15.pdf">Problem Set 1</a></td>
+<tr class="even">
+<td>Wed 9/2</td>
+<td>Sequences
+<br/>
+(<a href="http://www.youtube.com/watch?v=EhCxFY32SBk">Video</a>, <a href="text/slides/lec4.pdf">Slides</a>)</td>
+<td><span class="lab">Lab 2: Sequences</span></td>
+<td><a href="text/1_data.html#expressions">Chapter 1: Expressions</a></td>
 </tr>
-
-<tr>
-    <td>Mon, Sept 21</td>
-    <td>More counting + Story Proofs</td>
-    <td>1.5, 1.6</td>
-    <td></td>
+<tr class="even">
+<td>Fri 9/4</td>
+<td>Tables
+<br/>
+(<a href="http://www.youtube.com/watch?v=fIi8Sc9n9EU">Video</a>, <a href="text/slides/lec5.pdf">Slides</a>)</td>
+<td><a href="text/hw/hw02.pdf"><span class="hw">Homework 2</span></a> <span class="due">(due Wed 9/9)</span> (<a href="text/hw/hw02-answer.pdf">Solutions</a>)</td>
+<td><a href="text/1_data.html#tables">Chapter 1: Tables</a></td>
 </tr>
-
-<tr>
-    <td>Tues, Sept 22</td>
-    <td></td>
-    <td></td>
-    <td>Chapter 1 #5, 7, 21, 24, 33, 36</td>
+<tr class="odd">
+<td rowspan="3" class="weeknum">3</td>
+<td>Mon 9/7</td>
+<td><span class="holiday">No Lecture: Labor Day</span></td>
+<td></td>
+<td></td>
 </tr>
-
-<tr>
-    <td>Wed, Sept 23</td>
-    <td> Story Proofs + Axioms of probability + Properties + Inclusion-exclusion</td>
-    <td>1.6</td>
-    <td></td>
+<tr class="odd">
+<td>Wed 9/9</td>
+<td>Visualizations
+<br/>
+(<a href="http://www.youtube.com/watch?v=dmFizjgjs7o">Video</a>, Slides)</td>
+<td><span class="lab">Lab 3: Tables</span></td>
+<td><a href="text/2_visual.html#visualizations">Chapter 2: Visualizations</a></td>
 </tr>
-
-<tr>
-    <td>Fri, Sept 25</td>
-    <td>Conditional probability + Bayes' rule + LOTP</td>
-    <td>2.1 + 2.2 + 2.3 + 2.4</td>
-    <td>Chapter 1 #20, 41, 42, 43, 50, 53</td>
+<tr class="odd">
+<td>Fri 9/11</td>
+<td>Bar Charts and Histograms
+<br/>
+(<a href="http://www.youtube.com/watch?v=2tKuHP1ovJ0">Video</a>, Slides)</td>
+<td><a href="text/hw/hw03.pdf"><span class="hw">Homework 3</span></a> <span class="due">(due Wed 9/16)</span> (<a href="text/hw/hw03-answer.pdf">Solutions</a>)</td>
+<td><a href="text/2_visual.html#bar-charts-and-histograms">Chapter 2: Bar Charts And Histograms</a></td>
 </tr>
-
-<tr>
-    <td>Mon, Sept 28</td>
-    <td>Conditional probability + Bayes' rule + LOTP + Independence</td>
-    <td>2.1 + 2.2 + 2.3 + 2.4 + 2.5</td>
-    <td></td>
+<tr class="even">
+<td rowspan="3" class="weeknum">4</td>
+<td>Mon 9/14</td>
+<td>Functions
+<br/>
+(<a href="http://www.youtube.com/watch?v=lChMkz4XBk0">Video</a>, Slides)</td>
+<td></td>
+<td><a href="text/2_visual.html#functions">Chapter 2: Functions</a></td>
 </tr>
-
-<tr>
-    <td>Tues, Sept 29</td>
-    <td></td>
-    <td></td>
-    <td>Chapter 2 #4, 6, 11, 13, 60</td>
+<tr class="even">
+<td>Wed 9/16</td>
+<td>Sampling
+<br/>
+(<a href="http://www.youtube.com/watch?v=hlfmwPpEGG8">Video</a>, Slides)</td>
+<td><span class="lab">Lab 4: Histograms</span></td>
+<td><a href="text/2_visual.html#sampling">Chapter 2: Sampling</a></td>
 </tr>
-
-<tr>
-    <td>Wed, Sept 30</td>
-    <td>Conditional independence + First step analysis</td>
-    <td>2.5 + 2.6 + 2.7 + 2.8</td>
-    <td></td>
+<tr class="even">
+<td>Fri 9/18</td>
+<td><span class="breadth">Explorations: Privacy</span>
+<br/>
+(<a href="http://www.youtube.com/watch?v=EQQck1_Z2tI">Video</a>, <a href="text/slides/lec10.pdf">Slides</a>)</td>
+<td><a href="text/hw/hw04.pdf"><span class="hw">Homework 4</span></a> <span class="due">(due Wed 9/23)</span> (<a href="text/hw/hw04-answer.pdf">Solutions</a>)</td>
+<td><a href="text/2_visual.html#explorations-privacy">Chapter 2: Explorations Privacy</a></td>
 </tr>
-
-<tr>
-    <td>Fri, Oct 2</td>
-    <td><b>Midterm I</b></td>
-    <td></td>
-    <td>Review PS + Strategic practice problems</td>
+<tr class="odd">
+<td rowspan="3" class="weeknum">5</td>
+<td>Mon 9/21</td>
+<td>Iteration
+<br/>
+(<a href="http://www.youtube.com/watch?v=7zKYFkF7eBE">Video</a>, Slides)</td>
+<td></td>
+<td><a href="text/3_inference.html#iteration">Chapter 3: Iteration</a><br/>
+<a href="text/2_visual.html#appendix-statements">Chapter 2: Appendix Statements</a></td>
 </tr>
-
-<tr>
-    <td><b>Random Variables & Univariate Distributions:</b></td>
-    <td></td>
-    <td></td>
-    <td></td>
+<tr class="odd">
+<td>Wed 9/23</td>
+<td>Distributions I
+<br/>
+(<a href="http://www.youtube.com/watch?v=bOe7QHbPD0Q">Video</a>, Slides)</td>
+<td><span class="lab">Lab 5: Sampling</span></td>
+<td><a href="text/3_inference.html#distributions">Chapter 3: Distributions</a></td>
 </tr>
-
-<tr>
-    <td>Mon, Oct 5</td>
-    <td>RVs + PMFs + Discrete Uniform</td>
-    <td>3.1 + 3.2 + 3.5</td>
-    <td></td>
+<tr class="odd">
+<td>Fri 9/25</td>
+<td>Distributions II
+<br/>
+(<a href="http://www.youtube.com/watch?v=rbhZ1IN0ejg">Video</a>, Slides)</td>
+<td><a href="text/hw/hw05.pdf"><span class="hw">Homework 5</span></a> <span class="due">(due Wed 9/30)</span> (<a href="text/hw/hw05-answer.pdf">Solutions</a>)</td>
+<td><a href="text/3_inference.html#distributions">Chapter 3: Distributions</a></td>
 </tr>
-
-<tr>
-    <td>Wed, Oct 7</td>
-    <td>Bernoulli + Binomial + Hypergeometric + CDFs</td>
-    <td>3.3 + 3.4 + 3.6</td>
-    <td></td>
+<tr class="even">
+<td rowspan="3" class="weeknum">6</td>
+<td>Mon 9/28</td>
+<td>Total Variation Distance
+<br/>
+(<a href="http://www.youtube.com/watch?v=njmzvplkX6U">Video</a>, Slides)</td>
+<td></td>
+<td><a href="text/3_inference.html#Total-Variation-Distance">Chapter 3: Total Variation Distance</a></td>
 </tr>
-
-<tr>
-    <td>Fri, Oct 9</td>
-    <td>Functions of RVs + Independence of RVs + Expectation</td>
-    <td>3.7 + 3.8</td>
-    <td>Chapter 3 #5, 9, 14, 15, 17, 30, 31</td>
+<tr class="even">
+<td>Wed 9/30</td>
+<td>Hypothesis Testing
+<br/>
+(<a href="http://www.youtube.com/watch?v=qx2-QojeyiM">Video</a>, Slides)</td>
+<td><span class="lab">Lab 6: Distributions</span></td>
+<td><a href="text/3_inference.html#Are-the-panels-representative-of-the-population?">Chapter 3: Are The Panels Representative Of The Population?</a></td>
 </tr>
-
-<tr>
-    <td>Mon, Oct 12</td>
-    <td>Conditional Independence + Expectation + Linearity + Indicator RVs</td>
-    <td>4.1 + 4.2 + 4.4</td>
-    <td></td>
+<tr class="even">
+<td>Fri 10/2</td>
+<td>Permutation Tests I
+<br/>
+(<a href="http://www.youtube.com/watch?v=tcXckelnPYM">Video</a>, Slides)</td>
+<td><a href="text/hw/hw06.pdf"><span class="hw">Homework 6</span></a> <span class="due">(due Wed 10/7)</span> (<a href="text/hw/hw06-answer.pdf">Solutions</a>)</td>
+<td><a href="text/3_inference.html#Comparing-Two-Groups">Chapter 3: Comparing Two Groups</a></td>
 </tr>
-
-<tr>
-    <td>Tues, Oct 13</td>
-    <td></td>
-    <td></td>
-    <td>Chapter 3 #22, 24, 38, 40, 41, 44ab</td>
+<tr class="odd">
+<td rowspan="3" class="weeknum">7</td>
+<td>Mon 10/5</td>
+<td>Permutation Tests II
+<br/>
+(<a href="http://www.youtube.com/watch?v=Kz1Db3sHq2o">Video</a>, Slides)</td>
+<td></td>
+<td><a href="text/3_inference.html#Comparing-Two-Groups">Chapter 3: Comparing Two Groups</a></td>
 </tr>
-
-<tr>
-    <td>Wed, Oct 14</td>
-    <td>LOTUS + Variance</td>
-    <td>4.4 + 4.5 + 4.6</td>
-    <td></td>
+<tr class="odd">
+<td>Wed 10/7</td>
+<td>Statistics
+<br/>
+(<a href="http://www.youtube.com/watch?v=nl7MLAbSOgM">Video</a>, Slides)</td>
+<td><span class="lab">Lab 7: Project 1 Part 1</span><br/>
+<a href="projects/project1.html">Project 1</a> <span class="due">(due Mon 11/2)</span></td>
+<td><a href="text/3_inference.html#Further-Generalization:-New-Test-Statistics">Chapter 3: Further Generalization: New Test Statistics</a></td>
 </tr>
-
-<tr>
-    <td>Fri, Oct 16</td>
-    <td>Geometric + Negative Binomial</td>
-    <td>4.3</td>
-    <td>Chapter 4 #5, 6, 9, 12, 14, 16</td>
+<tr class="odd">
+<td>Fri 10/9</td>
+<td>Center and Spread
+<br/>
+(<a href="http://www.youtube.com/watch?v=ymEXv6ZYoAA">Video</a>, Slides)</td>
+<td><a href="text/hw/hw07.pdf"><span class="hw">Homework 7</span></a> <span class="due">(due Wed 10/14)</span> (<a href="text/hw/hw07-answer.pdf">Solutions</a>)</td>
+<td><a href="text/3_inference.html#The-Probability-Distribution-of-a-Sample-Mean">Chapter 3: The Probability Distribution Of A Sample Mean</a></td>
 </tr>
-
-<tr>
-    <td>Mon, Oct 19</td>
-    <td>Poisson</td>
-    <td>4.7</td>
-    <td></td>
+<tr class="even">
+<td rowspan="3" class="weeknum">8</td>
+<td>Mon 10/12</td>
+<td>Bell Curves
+<br/>
+(<a href="http://www.youtube.com/watch?v=oyGbanHV3iY">Video</a>, Slides)</td>
+<td></td>
+<td><a href="text/3_inference.html#The-Normal-Distribution">Chapter 3: The Normal Distribution</a></td>
 </tr>
-
-<tr>
-    <td>Tues, Oct 20</td>
-    <td></td>
-    <td></td>
-    <td>Chapter 4 #23, 25, 28, 57, 73, 80</td>
+<tr class="even">
+<td>Wed 10/14</td>
+<td>Central Limit Theorem
+<br/>
+(<a href="http://www.youtube.com/watch?v=Pu4g3TSzx6Q">Video</a>, Slides)</td>
+<td><span class="lab">Lab 8: Project 1 Part 2</span></td>
+<td><a href="text/3_inference.html#Approximately-Normal-Probability-Histograms">Chapter 3: Approximately Normal Probability Histograms</a></td>
 </tr>
-
-<tr>
-    <td>Wed, Oct 21</td>
-    <td>PDFs + CDFs + Expectation + Uniform</td>
-    <td>5.1 + 5.2</td>
-    <td></td>
+<tr class="even">
+<td>Fri 10/16</td>
+<td>Review
+<br/>
+(<a href="http://www.youtube.com/watch?v=7whYP2tpt50">Video</a>, Slides)</td>
+<td></td>
+<td></td>
 </tr>
-
-<tr>
-    <td>Fri, Oct 23</td>
-    <td>No class (MTRP)</td>
-    <td></td>
-    <td></td>
+<tr class="odd">
+<td rowspan="3" class="weeknum">9</td>
+<td>Mon 10/19</td>
+<td><span class="holiday">No Lecture: <a href="exams/midterm.html">Midterm</a></span></td>
+<td></td>
+<td></td>
 </tr>
-
-<tr>
-    <td>Mon, Oct 26</td>
-    <td>Review</td>
-    <td></td>
-    <td></td>
+<tr class="odd">
+<td>Wed 10/21</td>
+<td>Confidence Intervals
+<br/>
+(<a href="http://www.youtube.com/watch?v=atzB2sWA3pU">Video</a>, Slides)</td>
+<td><span class="lab">Lab 9: Project 1 Part 2 (again)</span></td>
+<td><a href="text/3_inference.html#Inference-about-the-mean-of-an-unknown-population">Chapter 3: Inference About The Mean Of An Unknown Population</a></td>
 </tr>
-
-<tr>
-    <td>Tues, Oct 27</td>
-    <td>Problem Solving Session</td>
-    <td></td>
-    <td></td>
+<tr class="odd">
+<td>Fri 10/23</td>
+<td><span class="breadth">Explorations: Art and Esthetics</span>
+<br/>
+(<a href="http://www.youtube.com/watch?v=mqKCH3vjmN8">Video</a>, Slides)</td>
+<td><a href="text/hw/hw08.pdf"><span class="hw">Homework 8</span></a> <span class="due">(due Wed 10/28)</span> (<a href="text/hw/hw08-answer.pdf">Solutions</a>)</td>
+<td><a href="https://medium.com/@hint_fm/design-and-redesign-4ab77206cf9">Design and Redesign in Data Visualization</a></td>
 </tr>
-
-<tr>
-    <td>Wed, Oct 28</td>
-    <td><b>Midterm II</b></td>
-    <td></td>
-    <td><a href="post/exam/ex2-review-math240-f15.pdf">Study guide</a></td>
+<tr class="even">
+<td rowspan="3" class="weeknum">10</td>
+<td>Mon 10/26</td>
+<td>The Bootstrap
+<br/>
+(<a href="http://www.youtube.com/watch?v=xDH_bfEYmnk">Video</a>, Slides)</td>
+<td></td>
+<td><a href="text/3_inference.html#the-bootstrap">Chapter 3: The Bootstrap</a></td>
 </tr>
-
-<tr>
-    <td>Fri, Oct 30</td>
-    <td>Normal</td>
-    <td>5.4</td>
-    <td>Chapter 5 #1, 5, 8</td>
+<tr class="even">
+<td>Wed 10/28</td>
+<td>A/B Testing
+<br/>
+(<a href="http://www.youtube.com/watch?v=nVWZmd_VSrM">Video</a>, Slides)</td>
+<td><span class="lab">Lab 10: Cumulative Distribution Functions</span></td>
+<td><a href="text/3_inference.html#Using-the-Bootstrap-Method-to-Test-Hypotheses">Chapter 3: Using The Bootstrap Method To Test Hypotheses</a></td>
 </tr>
-
-<tr>
-    <td>Mon, Nov 2</td>
-    <td>Exponential + Moments</td>
-    <td>5.5</td>
-    <td></td>
+<tr class="even">
+<td>Fri 10/30</td>
+<td>Correlation
+<br/>
+(<a href="http://www.youtube.com/watch?v=malIbdJuKaU">Video</a>, Slides)</td>
+<td><a href="text/hw/hw09.pdf"><span class="hw">Homework 9</span></a> <span class="due">(due Wed 11/4)</span> (<a href="text/hw/hw09-answer.pdf">Solutions</a>)</td>
+<td><a href="text/4_prediction.html#correlation">Chapter 4: Correlation</a></td>
 </tr>
-
-<tr>
-    <td>Tues, Nov 3</td>
-    <td></td>
-    <td></td>
-    <td>Chapter 5 #21, 24, 30, 39, 40a-c</td>
+<tr class="odd">
+<td rowspan="3" class="weeknum">11</td>
+<td>Mon 11/2</td>
+<td>Regression
+<br/>
+(<a href="http://www.youtube.com/watch?v=a3ftrVFUSW0">Video</a>, Slides)</td>
+<td></td>
+<td><a href="text/4_prediction.html#regression">Chapter 4: Regression</a></td>
 </tr>
-
-<tr>
-    <td>Wed, Nov 4</td>
-    <td>MGFs</td>
-    <td>6.1, 6.2, 6.4-6.6</td>
-    <td></td>
+<tr class="odd">
+<td>Wed 11/4</td>
+<td>Regression Inference
+<br/>
+(<a href="http://www.youtube.com/watch?v=YZFNwCMpwgA">Video</a>, Slides)</td>
+<td><span class="lab">Lab 11: Bootstrap and Regression</span></td>
+<td><a href="text/4_prediction.html#bootstrap-for-regression">Chapter 4: Bootstrap For Regression</a></td>
 </tr>
-
-<tr>
-    <td><b>Joint Distributions & Beyond:</b></td>
-    <td></td>
-    <td></td>
-    <td></td>
+<tr class="odd">
+<td>Fri 11/6</td>
+<td>Causality
+<br/>
+(<a href="http://www.youtube.com/watch?v=yfAZskQ57Kc">Video</a>, <a href="text/slides/lec30.pdf">Slides</a>)</td>
+<td><a href="text/hw/hw10.pdf"><span class="hw">Homework 10</span></a> <span class="due">(due Fri 11/13)</span> (<a href="text/hw/hw10-answer.pdf">Solutions</a>)</td>
+<td></td>
 </tr>
-
-<tr>
-    <td>Fri, Nov 6</td>
-    <td>Gamma distribution + Joint distributions</td>
-    <td>8.4 + 7.1</td>
-    <td>Chapter 6 #15, 16, 18, 19, 24</td>
-</tr>
-
-<tr>
-    <td>Mon, Nov 9</td>
-    <td>Joint distributions</td>
-    <td>7.1</td>
-    <td></td>
-</tr>
-
-<tr>
-    <td>Tues, Nov 10</td>
-    <td></td>
-    <td></td>
-    <td>Chapter 7 #1, 5, 10 + Chapter 8 #30 (no convolution)</td>
-</tr>
-
-<tr>
-    <td>Wed, Nov 11</td>
-    <td>2D LOTUS + Covariance + Correlation</td>
-    <td>7.2 + 7.3</td>
-    <td></td>
-</tr>
-
-<tr>
-    <td>Fri, Nov 13</td>
-    <td>Conditional expectation + Hierarchical models</td>
-    <td>9.1-9.3, 9.5, 9.6</td>
-    <td>Chapter 7 #16, 17, 33, 34, 40, 79 (hint: see Ex 7.1.9)</td>
-</tr>
-
-<tr>
-    <td>Mon, Nov 16</td>
-    <td>Markov + Chebyshev + LLN</td>
-    <td>10.1, 10.2</td>
-    <td></td>
-</tr>
-
-<tr>
-    <td>Wed, Nov 18</td>
-    <td>CLT</td>
-    <td>10.3</td>
-    <td></td>
-</tr>
-
-<tr>
-    <td>Sun, Nov 22</td>
-    <td><b>Final Exam, 11:30 am</b></td>
-    <td></td>
-    <td><a href="post/exam/final-review-math240-f15.pdf">Study guide</a></td>
-</tr>
-
-
-</tbody>
-
 </table>
-
-  </div>
-</div>
-
-  <div class="row">
-    <div class="column">
-      <hr>
     </div>
-    <div class="small-4 columns">
-      <p class="text-right menu-icon"><a href="#topbar">&#x25B2;</a></p>
-    </div>
-  </div>
-
-  <script src="/noita/foundation/js/vendor/jquery.js"></script>
-  <script src="/noita/foundation/js/vendor/fastclick.js"></script>
-  <script src="/noita/foundation/js/foundation.min.js"></script>
-  <script>$(document).foundation();</script>
-
+  </body>
   
-</body>
 </html>
